@@ -1,0 +1,9 @@
+Title: Yelp Data ETL with Apache Airflow
+
+Description:
+This project automates the extraction, transformation, and loading (ETL) of restaurant data from Yelp.fr using Python, SQLite, and Apache Airflow. Leveraging web scraping techniques, the data is collected from Yelp's website, processed, and stored in a SQLite database. Apache Airflow orchestrates the ETL process, allowing for seamless automation and scheduling of tasks. The extracted data includes restaurant details such as name, rating, reviews, cuisine type, price range, and location. This project serves as an example of how to build a data pipeline for web scraping and ETL using popular Python libraries and workflow orchestration tools.
+
+- Upgrade to a ELT pipelines, a lot better in this use case
+- Upgrade the transform part (I used a json to csv, pretty dirty transformations from the web scraping)
+- In the futur I will connect it to a AWS database (Here i use a local database in sqlite)
+- I extracted 20 restaurants from the website for each city to optimize the speed, but it can easily be set to take all the pages
